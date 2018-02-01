@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+ // Rota para url '/editoras'
+ Route::get('/editoras', 'EditoraController@index');
+
+ Route::get('/editoras/{editora}', 'EditoraController@show');
